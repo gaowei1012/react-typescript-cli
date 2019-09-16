@@ -2,7 +2,7 @@
  * @Description: 说明文件
  * @Author: 执念
  * @Date: 2019-09-04 19:05:54
- * @LastEditTime: 2019-09-16 22:32:09
+ * @LastEditTime: 2019-09-16 22:37:17
  * @LastEditors: Please set LastEditors
  -->
 自定义ts+react工程 ` beta 1.0 `
@@ -14,6 +14,8 @@
  - 工程化
 
  - 继承 ` redux ` 状态管理工具
+
+个人博客地址: [地址](https://www.gaomingwei.xyz)
 
 作者： 执念
 署名： 执念
