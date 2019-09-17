@@ -8,7 +8,10 @@
     "build": "webpack --config config/webpack.prod.js",
     "clear:dist": "rimraf ./dist"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
