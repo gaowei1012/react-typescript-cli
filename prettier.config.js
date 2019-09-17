@@ -2,7 +2,7 @@
  * @Description: prettier config
  * @Author: 执念
  * @Date: 2019-09-17 09:46:24
- * @LastEditTime: 2019-09-17 09:47:08
+ * @LastEditTime: 2019-09-17 10:08:19
  * @LastEditors: Please set LastEditors
  */
 module.exports = {

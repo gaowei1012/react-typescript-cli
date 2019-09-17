@@ -1,9 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-// import { Button } from 'antd';
 import { connect } from 'react-redux';
-// import InstanceButton from '../components/Instance/Instance';
-// import Icon from '../components/Icon/Icon'
 import { ButtonWithDefaultProps } from '../components/Button/Button';
 
 const initState = {
@@ -20,9 +17,6 @@ class Home extends Component<State> {
   public render(): JSX.Element {
     return (
       <>
-        {/* <Icon/> */}
-        {/* <InstanceButton/> */}
-        {/* <Button onClick={this.handleChick} type="default">HELLO</Button> */}
         <p>this is home views</p>
         <ButtonWithDefaultProps onClick={this.handleChick}>{'hello'}</ButtonWithDefaultProps>
       </>
