@@ -7,8 +7,8 @@
     "dev": "webpack-dev-server --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js",
     "clear:dist": "rimraf ./dist",
-    "lint": "run-s eslint prettier",
-    "eslint": "eslint --ext .ts,.tsx --ignore-pattern \"bad.*\" .",
+    "lint": "eslint src --fix --ext .ts,.tsx ",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-pattern \"bad.*\" .",
     "prettier": "prettier -l \"./**/*\"",
     "prettier:fix": "prettier --write -l \"./**/*\""
   },
@@ -38,8 +38,11 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/rimraf": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
     "autoprefixer": "^9.6.1",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-eslint": "^10.0.3",
     "babel-plugin-import": "^1.12.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
@@ -48,7 +51,9 @@
     "eslint": "^6.4.0",
     "eslint-config-alloy": "^3.0.0",
     "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-plugin-typescript": "^0.14.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "fibers": "^4.0.1",
@@ -76,5 +81,16 @@
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{.ts,.tsx}": [
+      "eslint",
+      "git add"
+    ]
   }
 }

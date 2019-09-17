@@ -2,20 +2,34 @@
  * @Description: eslint config
  * @Author: 执念
  * @Date: 2019-09-04 19:04:42
- * @LastEditTime: 2019-09-17 10:05:12
+ * @LastEditTime: 2019-09-17 12:52:35
  * @LastEditors: Please set LastEditors
  */
 module.exports = {
-  extends: ['./src/App.ts'],
+  parser: '@typescript-eslint/parser',
+  extends: [
+    'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
+  ],
+  plugins: ['@typescript-eslint'],
   env: {
-    node: true,
-    browser: true
+    browser: true,
+    node: true
   },
-  globals: {
-    // 你的全局变量
-    Prism: false
+  settings: {
+    "react": {
+      "pragma": "React",
+      "version": "delect"
+    }
+  },
+  parserOptions: {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      jsx: true
+    }
   },
   rules: {
-    // 自定义规则
+    // todo
   }
 };

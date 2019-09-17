@@ -1,23 +1,24 @@
-import react, { MouseEvent, SFC } from 'react';
-import React from 'react';
-import { withDefaultProps } from '../../utils/withDefaultProps';
+/** @format */
+
+import React, {MouseEvent, SFC} from 'react'
+import {withDefaultProps} from '../../utils/withDefaultProps'
 
 const defaultProps = {
-  color: 'red'
-};
+    color: 'red',
+}
 
-type DefaultProps = typeof defaultProps;
+type DefaultProps = typeof defaultProps
 type Props = {
-  onClick(e: MouseEvent<HTMLElement>): void;
-  children?: string;
-  color?: string;
-} & DefaultProps;
+    onClick(e: MouseEvent<HTMLElement>): void
+    children?: string
+    color?: string
+} & DefaultProps
 
-const MButton: SFC<Props> = ({ onClick: handleClick, children }) => (
-  <button onClick={handleClick ? handleClick : undefined}>{children}</button>
-);
+const MButton: SFC<Props> = ({onClick: handleClick, children}) => (
+    <button onClick={handleClick ? handleClick : undefined}>{children}</button>
+)
 
-const ButtonWithDefaultProps = withDefaultProps(defaultProps, MButton);
+const ButtonWithDefaultProps = withDefaultProps(defaultProps, MButton)
 
-export default ButtonWithDefaultProps;
-export { ButtonWithDefaultProps };
+export default ButtonWithDefaultProps
+export {ButtonWithDefaultProps}

@@ -1,38 +1,40 @@
-import * as React from 'react';
-import { Component } from 'react';
-import { connect } from 'react-redux';
-import { ButtonWithDefaultProps } from '../components/Button/Button';
+/** @format */
+
+import * as React from 'react'
+import {Component} from 'react'
+import {connect} from 'react-redux'
+import {ButtonWithDefaultProps} from '../components/Button/Button'
 
 const initState = {
-  count: 0
-};
+    count: 0,
+}
 
-type State = Readonly<typeof initState>;
+type State = Readonly<typeof initState>
 
 class Home extends Component<State> {
-  public handleChick = () => {
-    console.log('test');
-  };
+    public handleChick = () => {
+        console.log('test')
+    }
 
-  public render(): JSX.Element {
-    return (
-      <>
-        <p>this is home views</p>
-        <ButtonWithDefaultProps onClick={this.handleChick}>{'hello'}</ButtonWithDefaultProps>
-      </>
-    );
-  }
+    public render(): JSX.Element {
+        return (
+            <>
+                <p>this is home views</p>
+                <ButtonWithDefaultProps onClick={this.handleChick}>{'hello'}</ButtonWithDefaultProps>
+            </>
+        )
+    }
 }
 
 const mapStateToProps = (state: State) => {
-  return {
-    count: state.count
-  };
-};
+    return {
+        count: state.count,
+    }
+}
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {}
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home);
+    mapStateToProps,
+    mapDispatchToProps,
+)(Home)
