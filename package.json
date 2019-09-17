@@ -5,7 +5,8 @@
   "main": "App.ts",
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js"
+    "build": "webpack --config config/webpack.prod.js",
+    "clear:dist": "rimraf ./dist"
   },
   "keywords": [],
   "author": "",
@@ -23,12 +24,12 @@
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "typescript": "^3.6.2"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/rimraf": "^2.0.2",
     "autoprefixer": "^9.6.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-plugin-import": "^1.12.1",
@@ -36,7 +37,10 @@
     "copy-webpack-plugin": "^5.0.4",
     "cross-env": "^5.2.1",
     "css-loader": "^3.2.0",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-alloy": "^3.0.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-typescript": "^0.14.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "fibers": "^4.0.1",
     "html-webpack-plugin": "^3.2.0",
@@ -49,10 +53,13 @@
     "postcss-preset-env": "^6.7.0",
     "prepack-webpack-plugin": "^1.1.2",
     "purifycss-webpack": "^0.7.0",
+    "rimraf": "^3.0.0",
     "sass": "^1.22.10",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
     "sugarss": "^2.0.0",
+    "typescript": "^3.6.3",
+    "typescript-eslint-parser": "^22.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "web-webpack-plugin": "^4.6.6",
     "webpack": "^4.39.3",
