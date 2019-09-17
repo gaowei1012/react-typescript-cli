@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!--
  * @Description: 说明文件
  * @Author: 执念
@@ -8,13 +10,13 @@
 
 自定义 ts+react 工程 `beta 1.0`
 
-- 自定义脚手架，采用 `typescripts` 编写，拥抱大前端生态圈!
+-   自定义脚手架，采用 `typescripts` 编写，拥抱大前端生态圈!
 
-- 代码带包编译，dokcer 快速部署
+-   代码带包编译，dokcer 快速部署
 
-- 工程化
+-   工程化
 
-- 继承 `redux` 状态管理工具
+-   继承 `redux` 状态管理工具
 
 个人博客地址: [地址](https://www.gaomingwei.xyz)
 
