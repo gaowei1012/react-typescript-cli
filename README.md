@@ -4,7 +4,7 @@
  * @Description: 说明文件
  * @Author: 执念
  * @Date: 2019-09-04 19:05:54
- * @LastEditTime: 2019-09-17 13:09:19
+ * @LastEditTime: 2019-09-17 13:59:24
  * @LastEditors: Please set LastEditors
  -->
 
@@ -19,6 +19,10 @@
 -   工程化
 
 -   继承 `redux` 状态管理工具
+
+-   后续开发任务
+  - 搭建antd-degies开发平台
+  - 使用mock数据
 
 个人博客地址: [地址](https://www.gaomingwei.xyz)
 
