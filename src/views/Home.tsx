@@ -8,15 +8,14 @@ import { ButtonWithDefaultProps } from '../components/Button/Button';
 
 const initState = {
   count: 0
-}
+};
 
 type State = Readonly<typeof initState>;
 
 class Home extends Component<State> {
-
   public handleChick = () => {
-    console.log('test')
-  }
+    console.log('test');
+  };
 
   public render(): JSX.Element {
     return (
@@ -25,20 +24,19 @@ class Home extends Component<State> {
         {/* <InstanceButton/> */}
         {/* <Button onClick={this.handleChick} type="default">HELLO</Button> */}
         <p>this is home views</p>
-        <ButtonWithDefaultProps onClick={this.handleChick} >{"hello"}</ButtonWithDefaultProps>
+        <ButtonWithDefaultProps onClick={this.handleChick}>{'hello'}</ButtonWithDefaultProps>
       </>
-    )
+    );
   }
 }
-
 
 const mapStateToProps = (state: State) => {
   return {
     count: state.count
-  }
-}
+  };
+};
 
-const mapDispatchToProps = { }
+const mapDispatchToProps = {};
 
 export default connect(
   mapStateToProps,

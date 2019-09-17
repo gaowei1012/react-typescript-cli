@@ -1,16 +1,11 @@
-import React, {Component} from 'React'
+import React, { Component } from 'React';
 
 export default class Login extends Component {
   public constructor(props: any) {
-    super(props)
+    super(props);
   }
 
   public render(): JSX.Element {
-    return (
-      <div>
-        this is login
-      </div>
-    )
+    return <div>this is login</div>;
   }
 }
-

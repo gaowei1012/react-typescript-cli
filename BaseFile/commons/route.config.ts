@@ -6,10 +6,13 @@
  * @LastEditors: Please set LastEditors
  */
 export default {
-  menus: [ // 菜单相关路由
+  menus: [
+    // 菜单相关路由
     { key: '/app/dashboard/index', title: '首页', icon: 'mobile', component: 'Dashboard' },
     {
-      key: '/app/ui', title: 'UI', icon: 'scan',
+      key: '/app/ui',
+      title: 'UI',
+      icon: 'scan',
       subs: [
         { key: '/app/ui/buttons', title: '按钮', component: 'Buttons' },
         { key: '/app/ui/icons', title: '图标', component: 'Icons' },
@@ -26,7 +29,7 @@ export default {
         { key: '/app/ui/message', title: '全局通知', component: 'Messages' },
         { key: '/app/ui/alert', title: '警告提示', component: 'Alerts' },
         { key: '/app/ui/test', title: '生命周期', component: 'LifeCycle' }
-      ],
+      ]
     }
   ]
-}
+};

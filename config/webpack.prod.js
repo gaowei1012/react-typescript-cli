@@ -5,17 +5,17 @@
  * @LastEditTime: 2019-09-16 18:15:40
  * @LastEditors: Please set LastEditors
  */
-const path = require('path')
-const webpack = require('webpack')
-const glob = require('glob')
-const ExtractWebpackPlugin = require('extract-text-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const BaseConfig = require('./webpack.base')
-const merge = require('webpack-merge')
+const path = require('path');
+const webpack = require('webpack');
+const glob = require('glob');
+const ExtractWebpackPlugin = require('extract-text-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BaseConfig = require('./webpack.base');
+const merge = require('webpack-merge');
 
-const resolve = dir => path.resolve(__dirname, dir)
-const isDev = process.env.NODE_ENV === 'development'
-const isPrd = process.env.NODE_ENV === 'production'
+const resolve = dir => path.resolve(__dirname, dir);
+const isDev = process.env.NODE_ENV === 'development';
+const isPrd = process.env.NODE_ENV === 'production';
 
 module.exports = merge(BaseConfig, {
   //mode: isPrd,
@@ -30,7 +30,7 @@ module.exports = merge(BaseConfig, {
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: false
     }),
-    new webpack.HashedModuleIdsPlugin(),
+    new webpack.HashedModuleIdsPlugin()
   ],
   optimization: {
     minimize: false,
@@ -66,4 +66,4 @@ module.exports = merge(BaseConfig, {
       }
     }
   }
-})
+});

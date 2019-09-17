@@ -5,21 +5,21 @@
  * @LastEditTime: 2019-09-16 17:02:05
  * @LastEditors: Please set LastEditors
  */
-const path = require('path')
-const webpack = require('webpack')
-const merge = require('webpack-merge')
-const BaseConfig = require('./webpack.base')
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const path = require('path');
+const webpack = require('webpack');
+const merge = require('webpack-merge');
+const BaseConfig = require('./webpack.base');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const resolve = dir => path.resolve(__dirname, dir)
+const resolve = dir => path.resolve(__dirname, dir);
 
 module.exports = merge(BaseConfig, {
   mode: 'development',
   devtool: 'inline-source-map',
   output: {
-    path: resolve("dist"),
-    chunkFilename: "js/[name].bundle.js",
-    filename: "js/[name].bundle.js"
+    path: resolve('dist'),
+    chunkFilename: 'js/[name].bundle.js',
+    filename: 'js/[name].bundle.js'
   },
   devServer: {
     hot: true,
@@ -29,7 +29,7 @@ module.exports = merge(BaseConfig, {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, "../src/assets/index.html")
+      template: path.resolve(__dirname, '../src/assets/index.html')
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -60,6 +60,6 @@ module.exports = merge(BaseConfig, {
         }
       }
     },
-    runtimeChunk: true, // webpack 运行时会打包runtime.js
+    runtimeChunk: true // webpack 运行时会打包runtime.js
   }
-})
+});

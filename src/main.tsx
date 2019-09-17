@@ -8,11 +8,11 @@ export interface IMainProps {
   app: App;
 }
 
-export class Main extends React.Component{
+export class Main extends React.Component {
   public render(): JSX.Element {
     return (
       <Provider store={store}>
-        <ExRouter/>
+        <ExRouter />
       </Provider>
     );
   }
