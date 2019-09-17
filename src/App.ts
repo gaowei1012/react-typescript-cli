@@ -1,13 +1,12 @@
 /*
- * @Description: In User Settings Edit
- * @Author: your name
+ * @Description: App 
+ * @Author: 执念
  * @Date: 2019-09-04 18:46:17
- * @LastEditTime: 2019-09-16 22:17:25
+ * @LastEditTime: 2019-09-17 11:45:43
  * @LastEditors: Please set LastEditors
  */
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
-import ExRouter from './routes/router';
 import { Main } from './main';
 
 import './styles/global.sass';
